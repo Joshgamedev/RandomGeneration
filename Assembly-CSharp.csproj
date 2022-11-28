@@ -9,7 +9,7 @@
     <ProductVersion>10.0.20506</ProductVersion>
     <SchemaVersion>2.0</SchemaVersion>
     <RootNamespace></RootNamespace>
-    <ProjectGuid>{af2b1ab0-9369-0296-8c08-d58dc5031685}</ProjectGuid>
+    <ProjectGuid>{be19d7ba-fa1c-9fd4-581f-46642de33e40}</ProjectGuid>
     <OutputType>Library</OutputType>
     <AppDesignerFolder>Properties</AppDesignerFolder>
     <AssemblyName>Assembly-CSharp</AssemblyName>
@@ -37,12 +37,18 @@
   </PropertyGroup>
   <ItemGroup>
      <Compile Include="Assets\Scripts\TestingInputSystem.cs" />
+     <Compile Include="Assets\Scripts\Cameracontroller.cs" />
+     <Compile Include="Assets\Scripts\Player_Movement.cs" />
      <Compile Include="Assets\Scripts\World_Generate.cs" />
      <Compile Include="Assets\Week 4\Demo 2\Scripts\Objects.cs" />
      <Compile Include="Assets\Week 4\Demo 1\Generator.cs" />
      <Compile Include="Assets\PlayerInputActions.cs" />
-     <Compile Include="Assets\Scripts\Player_Movement.cs" />
-     <Compile Include="Assets\Scripts\Cameracontroller.cs" />
+     <Compile Include="Assets\Week 3\Demo 2\Scripts\InvokeRepeatingExample.cs" />
+     <Compile Include="Assets\Week 3\Demo 5\Scripts\GetComponentExample.cs" />
+     <Compile Include="Assets\Week 3\Demo 3\Scripts\CoroutineExample.cs" />
+     <Compile Include="Assets\Week 3\Demo 1\Scripts\InvokeExample.cs" />
+     <Compile Include="Assets\Week 3\Demo 4\Scripts\ListExample.cs" />
+     <Compile Include="Assets\Scripts\Coroutinetrial.cs" />
     <Reference Include="UnityEngine">
         <HintPath>C:/Program Files/Unity 2021.1.17f1/Editor/Data/Managed/UnityEngine/UnityEngine.dll</HintPath>
     </Reference>
@@ -275,10 +281,10 @@
         <HintPath>C:/Program Files/Unity 2021.1.17f1/Editor/Data/Managed/UnityEngine/UnityEditor.UnityConnectModule.dll</HintPath>
     </Reference>
     <Reference Include="Unity.VisualScripting.Antlr3.Runtime">
-        <HintPath>D:/Users/FRA18000069/Indie Games Programming/Random Generation Project/Library/PackageCache/com.unity.visualscripting@1.6.1/Runtime/VisualScripting.Flow/Dependencies/NCalc/Unity.VisualScripting.Antlr3.Runtime.dll</HintPath>
+        <HintPath>D:/Users/FRA18000069/Indie Games Programming/Random gen/RandomGeneration/Library/PackageCache/com.unity.visualscripting@1.6.1/Runtime/VisualScripting.Flow/Dependencies/NCalc/Unity.VisualScripting.Antlr3.Runtime.dll</HintPath>
     </Reference>
     <Reference Include="Newtonsoft.Json">
-        <HintPath>D:/Users/FRA18000069/Indie Games Programming/Random Generation Project/Library/PackageCache/com.unity.nuget.newtonsoft-json@2.0.0/Runtime/Newtonsoft.Json.dll</HintPath>
+        <HintPath>D:/Users/FRA18000069/Indie Games Programming/Random gen/RandomGeneration/Library/PackageCache/com.unity.nuget.newtonsoft-json@2.0.0/Runtime/Newtonsoft.Json.dll</HintPath>
     </Reference>
     <Reference Include="UnityEditor.iOS.Extensions.Xcode">
         <HintPath>C:/Program Files/Unity 2021.1.17f1/Editor/Data/PlaybackEngines/AppleTVSupport/UnityEditor.iOS.Extensions.Xcode.dll</HintPath>
@@ -635,67 +641,67 @@
         <HintPath>C:/Program Files/Unity 2021.1.17f1/Editor/Data/NetStandard/compat/2.0.0/shims/netfx/System.Xml.Serialization.dll</HintPath>
     </Reference>
     <Reference Include="Unity.VisualScripting.Flow.Editor">
-        <HintPath>D:/Users/FRA18000069/Indie Games Programming/Random Generation Project/Library/ScriptAssemblies/Unity.VisualScripting.Flow.Editor.dll</HintPath>
+        <HintPath>D:/Users/FRA18000069/Indie Games Programming/Random gen/RandomGeneration/Library/ScriptAssemblies/Unity.VisualScripting.Flow.Editor.dll</HintPath>
     </Reference>
     <Reference Include="Unity.VSCode.Editor">
-        <HintPath>D:/Users/FRA18000069/Indie Games Programming/Random Generation Project/Library/ScriptAssemblies/Unity.VSCode.Editor.dll</HintPath>
+        <HintPath>D:/Users/FRA18000069/Indie Games Programming/Random gen/RandomGeneration/Library/ScriptAssemblies/Unity.VSCode.Editor.dll</HintPath>
     </Reference>
     <Reference Include="Unity.TextMeshPro.Editor">
-        <HintPath>D:/Users/FRA18000069/Indie Games Programming/Random Generation Project/Library/ScriptAssemblies/Unity.TextMeshPro.Editor.dll</HintPath>
+        <HintPath>D:/Users/FRA18000069/Indie Games Programming/Random gen/RandomGeneration/Library/ScriptAssemblies/Unity.TextMeshPro.Editor.dll</HintPath>
     </Reference>
     <Reference Include="Unity.VisualStudio.Editor">
-        <HintPath>D:/Users/FRA18000069/Indie Games Programming/Random Generation Project/Library/ScriptAssemblies/Unity.VisualStudio.Editor.dll</HintPath>
+        <HintPath>D:/Users/FRA18000069/Indie Games Programming/Random gen/RandomGeneration/Library/ScriptAssemblies/Unity.VisualStudio.Editor.dll</HintPath>
     </Reference>
     <Reference Include="Unity.Sysroot.Linux_x86_64">
-        <HintPath>D:/Users/FRA18000069/Indie Games Programming/Random Generation Project/Library/ScriptAssemblies/Unity.Sysroot.Linux_x86_64.dll</HintPath>
+        <HintPath>D:/Users/FRA18000069/Indie Games Programming/Random gen/RandomGeneration/Library/ScriptAssemblies/Unity.Sysroot.Linux_x86_64.dll</HintPath>
     </Reference>
     <Reference Include="Unity.Toolchain.Win-x86_64-Linux-x86_64">
-        <HintPath>D:/Users/FRA18000069/Indie Games Programming/Random Generation Project/Library/ScriptAssemblies/Unity.Toolchain.Win-x86_64-Linux-x86_64.dll</HintPath>
+        <HintPath>D:/Users/FRA18000069/Indie Games Programming/Random gen/RandomGeneration/Library/ScriptAssemblies/Unity.Toolchain.Win-x86_64-Linux-x86_64.dll</HintPath>
     </Reference>
     <Reference Include="Unity.Timeline.Editor">
-        <HintPath>D:/Users/FRA18000069/Indie Games Programming/Random Generation Project/Library/ScriptAssemblies/Unity.Timeline.Editor.dll</HintPath>
+        <HintPath>D:/Users/FRA18000069/Indie Games Programming/Random gen/RandomGeneration/Library/ScriptAssemblies/Unity.Timeline.Editor.dll</HintPath>
     </Reference>
     <Reference Include="Unity.Timeline">
-        <HintPath>D:/Users/FRA18000069/Indie Games Programming/Random Generation Project/Library/ScriptAssemblies/Unity.Timeline.dll</HintPath>
+        <HintPath>D:/Users/FRA18000069/Indie Games Programming/Random gen/RandomGeneration/Library/ScriptAssemblies/Unity.Timeline.dll</HintPath>
     </Reference>
     <Reference Include="Unity.VisualScripting.Core.Editor">
-        <HintPath>D:/Users/FRA18000069/Indie Games Programming/Random Generation Project/Library/ScriptAssemblies/Unity.VisualScripting.Core.Editor.dll</HintPath>
+        <HintPath>D:/Users/FRA18000069/Indie Games Programming/Random gen/RandomGeneration/Library/ScriptAssemblies/Unity.VisualScripting.Core.Editor.dll</HintPath>
     </Reference>
     <Reference Include="Unity.TextMeshPro">
-        <HintPath>D:/Users/FRA18000069/Indie Games Programming/Random Generation Project/Library/ScriptAssemblies/Unity.TextMeshPro.dll</HintPath>
+        <HintPath>D:/Users/FRA18000069/Indie Games Programming/Random gen/RandomGeneration/Library/ScriptAssemblies/Unity.TextMeshPro.dll</HintPath>
     </Reference>
     <Reference Include="Unity.VisualScripting.State.Editor">
-        <HintPath>D:/Users/FRA18000069/Indie Games Programming/Random Generation Project/Library/ScriptAssemblies/Unity.VisualScripting.State.Editor.dll</HintPath>
+        <HintPath>D:/Users/FRA18000069/Indie Games Programming/Random gen/RandomGeneration/Library/ScriptAssemblies/Unity.VisualScripting.State.Editor.dll</HintPath>
     </Reference>
     <Reference Include="VSSettingsProvider">
-        <HintPath>D:/Users/FRA18000069/Indie Games Programming/Random Generation Project/Library/ScriptAssemblies/VSSettingsProvider.dll</HintPath>
+        <HintPath>D:/Users/FRA18000069/Indie Games Programming/Random gen/RandomGeneration/Library/ScriptAssemblies/VSSettingsProvider.dll</HintPath>
     </Reference>
     <Reference Include="Unity.VisualScripting.Flow">
-        <HintPath>D:/Users/FRA18000069/Indie Games Programming/Random Generation Project/Library/ScriptAssemblies/Unity.VisualScripting.Flow.dll</HintPath>
+        <HintPath>D:/Users/FRA18000069/Indie Games Programming/Random gen/RandomGeneration/Library/ScriptAssemblies/Unity.VisualScripting.Flow.dll</HintPath>
     </Reference>
     <Reference Include="UnityEditor.UI">
-        <HintPath>D:/Users/FRA18000069/Indie Games Programming/Random Generation Project/Library/ScriptAssemblies/UnityEditor.UI.dll</HintPath>
+        <HintPath>D:/Users/FRA18000069/Indie Games Programming/Random gen/RandomGeneration/Library/ScriptAssemblies/UnityEditor.UI.dll</HintPath>
     </Reference>
     <Reference Include="Unity.InputSystem">
-        <HintPath>D:/Users/FRA18000069/Indie Games Programming/Random Generation Project/Library/ScriptAssemblies/Unity.InputSystem.dll</HintPath>
+        <HintPath>D:/Users/FRA18000069/Indie Games Programming/Random gen/RandomGeneration/Library/ScriptAssemblies/Unity.InputSystem.dll</HintPath>
     </Reference>
     <Reference Include="Unity.Rider.Editor">
-        <HintPath>D:/Users/FRA18000069/Indie Games Programming/Random Generation Project/Library/ScriptAssemblies/Unity.Rider.Editor.dll</HintPath>
+        <HintPath>D:/Users/FRA18000069/Indie Games Programming/Random gen/RandomGeneration/Library/ScriptAssemblies/Unity.Rider.Editor.dll</HintPath>
     </Reference>
     <Reference Include="UnityEngine.UI">
-        <HintPath>D:/Users/FRA18000069/Indie Games Programming/Random Generation Project/Library/ScriptAssemblies/UnityEngine.UI.dll</HintPath>
+        <HintPath>D:/Users/FRA18000069/Indie Games Programming/Random gen/RandomGeneration/Library/ScriptAssemblies/UnityEngine.UI.dll</HintPath>
     </Reference>
     <Reference Include="Unity.PlasticSCM.Editor">
-        <HintPath>D:/Users/FRA18000069/Indie Games Programming/Random Generation Project/Library/ScriptAssemblies/Unity.PlasticSCM.Editor.dll</HintPath>
+        <HintPath>D:/Users/FRA18000069/Indie Games Programming/Random gen/RandomGeneration/Library/ScriptAssemblies/Unity.PlasticSCM.Editor.dll</HintPath>
     </Reference>
     <Reference Include="Unity.VisualScripting.State">
-        <HintPath>D:/Users/FRA18000069/Indie Games Programming/Random Generation Project/Library/ScriptAssemblies/Unity.VisualScripting.State.dll</HintPath>
+        <HintPath>D:/Users/FRA18000069/Indie Games Programming/Random gen/RandomGeneration/Library/ScriptAssemblies/Unity.VisualScripting.State.dll</HintPath>
     </Reference>
     <Reference Include="Unity.VisualScripting.Core">
-        <HintPath>D:/Users/FRA18000069/Indie Games Programming/Random Generation Project/Library/ScriptAssemblies/Unity.VisualScripting.Core.dll</HintPath>
+        <HintPath>D:/Users/FRA18000069/Indie Games Programming/Random gen/RandomGeneration/Library/ScriptAssemblies/Unity.VisualScripting.Core.dll</HintPath>
     </Reference>
     <Reference Include="Unity.SysrootPackage.Editor">
-        <HintPath>D:/Users/FRA18000069/Indie Games Programming/Random Generation Project/Library/ScriptAssemblies/Unity.SysrootPackage.Editor.dll</HintPath>
+        <HintPath>D:/Users/FRA18000069/Indie Games Programming/Random gen/RandomGeneration/Library/ScriptAssemblies/Unity.SysrootPackage.Editor.dll</HintPath>
     </Reference>
   </ItemGroup>
   <ItemGroup>
