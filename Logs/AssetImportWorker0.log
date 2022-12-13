@@ -154,3 +154,4 @@ Received Import Request.
   path: Assets/Scenes/RobsStuff/Spawner.prefab
   artifactKey: Guid(4764c2e415e96bd419b463ce6029409e) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
 Start importing Assets/Scenes/RobsStuff/Spawner.prefab using Guid(4764c2e415e96bd419b463ce6029409e) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '4c20023cd2d12432a4ee84bc439031b3') in 0.004679 seconds 
+AssetImportWorkerClient::OnTransportError - code=2 error=End of file
