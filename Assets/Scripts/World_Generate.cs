@@ -8,6 +8,9 @@ public class World_Generate : MonoBehaviour
     public GameObject Room;
     public GameObject SpawnPoints;
 
+
+    public GameObject spawner;
+
     public GameObject SpawnPoint;
     public int gridX;
     public int gridY;
@@ -30,6 +33,16 @@ public class World_Generate : MonoBehaviour
             SceneManager.LoadScene(scene.name);
         }
     }
+
+
+/*     float JoshRandomNumber = Random.Range (0f,1f); //will generate a decimal
+
+    if (JoshRandomNumber <= 0.30f) {
+
+    } */
+    
+
+  
      
     IEnumerator WorldSpawn()
     {
@@ -37,13 +50,13 @@ public class World_Generate : MonoBehaviour
         {
             for(int j = 0; j < gridY; j++)
             {
-                GameObject room = Instantiate(Room, SpawnPoints.transform);
+                GameObject room = Instantiate(Room, spawner.transform);
                 room.transform.parent = null;
-                SpawnPoints.transform.position = new Vector3(transform.position.x, 0, transform.position.z + 10);
+                spawner.transform.position = new Vector3(transform.position.x, 0, transform.position.z + 1000);
                 yield return new WaitForSeconds(generateTime);
             }
 
-            SpawnPoints.transform.position = new Vector3(transform.position.x + 10, transform.position.y, 0);
+            spawner.transform.position = new Vector3(transform.position.x + 1000, transform.position.y, 0);
         }
 
        
